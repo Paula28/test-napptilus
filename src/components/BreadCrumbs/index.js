@@ -15,7 +15,7 @@ function BreadCrumbs({ onSearch }) {
     <div className='breadcrumbs'>
       <span className='list-link' onClick={handleClick}>List</span>
       {
-        detailId?.length > 0 && <span> / Detail</span>
+        detailId?.length > 0 && <span> /Detail</span>
       }
     </div>
   )

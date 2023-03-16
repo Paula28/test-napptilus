@@ -21,9 +21,11 @@ function Header({ onSearch }) {
         (detailId?.length === 0 || !detailId) &&
         <InputSearch onChange={(evt) => onSearch(evt.target.value)} />
       }
-      <div className='container-count-product'>
-        <img className='icon-buy-cart' src='img/pngwing.com.png' />
-        <span>{countProduct}</span>
+      <div className='container-cart'>
+        <div className='container-count-product'>
+          <img className='icon-buy-cart' src='img/pngwing.com.png' />
+        </div>
+          <span className='span-number-cart'>{countProduct}</span>
       </div>
     </div>
   )

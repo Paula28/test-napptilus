@@ -164,6 +164,9 @@
     justify-content: space-between;
     height: 100px;
     width: 100%;
+    padding-top: 30px;
+    padding-right: 20px;
+
 
     &>img {
         cursor: pointer;
@@ -174,21 +177,26 @@
     }
 
 }
-
-.container-count-product {
-    height: 100px;
-
-    span {
-        position: absolute;
-        left: 98%;
-        top: 80px;
-        border: 1px solid;
-        border-radius: 100%;
-        width: 20px;
-        height: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.container-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .container-count-product {
+        height: 100px;
+    
+        .span-number-cart {
+            position: absolute;
+            left: 98%;
+            top: 80px;
+            border: 1px solid;
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+        }
     }
 }
 
@@ -246,6 +254,13 @@ input {
 }
 
 .breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 18px;
     .list-link {
         &:hover {
             text-decoration: underline;
