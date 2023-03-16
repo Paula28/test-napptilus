@@ -12,7 +12,7 @@ Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser.
 
 **Remember that every hour the products you have saved in your cart will be deleted!**. \
-Take care with the version in **React > 18.2.0 and NodeJS > 18.15.** \
+Take care with the version in **React > 18.2.0 and NodeJS > 18.15.** 
 
 1- Git Clone. \
     $git clone https://github.com/Paula28/test-napptilus.git \
