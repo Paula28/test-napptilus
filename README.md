@@ -16,11 +16,11 @@ Take care with the version in **React > 18.2.0 and NodeJS > 18.15.**
 
 1- Git Clone. \
 ```
-    $git clone https://github.com/Paula28/test-napptilus.git \
+    $git clone https://github.com/Paula28/test-napptilus.git 
 ```
 2- Install packages. \
 ```
-    $ npm install. \
+    $ npm install. 
 ```
 3- Run project. \
 ```
