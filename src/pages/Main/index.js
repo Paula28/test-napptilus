@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import InputSearch from '../../components/InputSearch';
 import ListMobileDevices from '../../components/ListMobileDevice';
 import DetailMobile from '../../components/DetailMobile';
 import {setMobileDevices} from '../../redux/actions/mobileDevicesActions'
 import { getListMobileDevices } from '../../services';
 import Header from '../../components/Header';
 import BreadCrumbs from '../../components/BreadCrumbs';
+import Loading from '../../components/Loading';
 
 
 export default function Main() {
@@ -29,7 +29,7 @@ export default function Main() {
   }, []) 
 
   if (loading) {
-    return <div>Loading baby</div>
+    return <Loading/>
   }
   if (detailId?.length > 0) {
     return <DetailMobile/>

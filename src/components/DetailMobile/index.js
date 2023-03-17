@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setProductInTheCart } from '../../redux/actions/mobileDevicesActions';
-// import { setDetailId } from '../../redux/actions/mobileDevicesActions';
 import { getDetailMobileDevice, setMobileInTheCart } from '../../services';
 import BreadCrumbs from '../BreadCrumbs';
 import Button from '../Button';
 import Header from '../Header';
+import Loading from '../Loading';
 
 function DetailMobileDevice() {
     const [loading, setLoading] = useState(false)
@@ -39,7 +39,7 @@ function DetailMobileDevice() {
     }, [detailId])
 
     if (loading) {
-        return <div>Loading detail baby</div>
+        return <Loading/>
     }
     return (
         <div className='container-page-detail'>

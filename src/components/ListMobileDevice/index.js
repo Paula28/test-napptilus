@@ -7,7 +7,6 @@ export default function ListMobileDevices({search = ''}) {
     if (mobileDevices?.length > 0) {
       filteredMobileDevices = mobileDevices.filter((mobileDevice) => mobileDevice.brand.toLowerCase().indexOf(search.toLowerCase()) !== -1 || mobileDevice.model.toLowerCase().indexOf(search.toLowerCase()) !== -1)
     }
-    console.log({mobileDevices, filteredMobileDevices, search})
   return (
     <div className="container">  
         {

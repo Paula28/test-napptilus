@@ -10,7 +10,6 @@ const getState = () => {
     const storage = localStorage.getItem('mobile_store')
     const mobileStoreTimeOut = localStorage.getItem('mobile_store_timeout')
     const time = new Date().getTime() / 1000
-    console.log({time, mobileStoreTimeOut, diff: time - parseInt(mobileStoreTimeOut, 10)})
     if (mobileStoreTimeOut &&  time - parseInt(mobileStoreTimeOut, 10) >= 3600) {
         localStorage.clear()
         return initialState
